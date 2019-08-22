@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1463391978 source:f:\study\tin\game_soan_so\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1455376459 source:f:\study\tin\sobimat_function_added\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

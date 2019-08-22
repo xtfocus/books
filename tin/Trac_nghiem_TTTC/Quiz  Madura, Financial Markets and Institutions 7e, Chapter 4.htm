@@ -1,0 +1,1446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD W3 HTML//EN">
+<!-- saved from url=(0105)http://webquiz.ilrn.com/ilrn/bca/user/quiz-public/run;jsessionid=81F45730F8BA593B61625D5E85276D82?move=30 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link type="text/css" rel="stylesheet" href="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/style_sheet_v2.css">
+<link type="text/css" rel="stylesheet" href="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/style_sheet_v3.css">
+<link type="text/css" rel="stylesheet" href="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/takeAssignment.css">
+<title>Quiz: Madura, Financial Markets and Institutions 7e, Chapter 4 </title>
+<style type="text/css" media="screen"> DIV:highlight { background-color:black; } </style>
+<script type="text/javascript" async="" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/ga.js"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/main.js" language="javascript"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/compatabilityTools.js" language="javascript"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/events.js" type="text/javascript"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/analytics.js" type="text/javascript"></script><script language="javascript">
+	var MEScot1='Sorry, your current browser does not support this content. \nPlease upgrade your browser. Refer to the CengageNOW System Requirements to determine the appropriate browser and version for your system.';
+</script><script language="javascript">
+
+//this is a stupid little function to compensate for a call to confirm from within an href.
+//foreign character sets are lost in an href, so it has to be handled this way.
+//the '1' or '2' just help with which string to use, and are purposely not matching the #
+//in the message tag as that label will likely change
+function mc(confMes)
+{
+	if (confMes==1)
+    	return confirm('You will lose all your current answers. Are you sure you want to proceed?');
+    else if (confMes==2)
+    	return confirm('This will end the quiz and take you to the review page - you will not be able to change your answers after this point. Are you sure you want to proceed?');    
+}
+
+var timeRemaining = -1;
+
+var secondsRemaining = timeRemaining / 1000;
+
+var returnUrl = "/bca/user/quiz-public/expired?session=81F45730F8BA593B61625D5E85276D82";
+var returnTarget = "_self";
+
+function clockIsPresent()
+{
+   if( document.forms.clockForm )
+      if( document.forms.clockForm.clockField) 
+         return true;
+
+   return false;
+
+}
+
+var intervalID;
+
+function startClock()
+{                
+    if( clockIsPresent()  && timeRemaining > 0)
+    {
+        intervalID = window.setInterval("updateClock()",1000);
+    }
+}
+
+function updateClock()
+{
+    if(clockIsPresent())
+    {
+        var remaining = secondsRemaining;
+        var tH = Math.floor( remaining / 3600 );
+        var tM = Math.floor( (remaining % 3600) / 60 );
+        var tS = remaining % 60;
+        var tShow = tM + ':' + Math.floor(tS/10) + Math.floor(tS%10);
+
+        if( tH > 0 )
+        {
+            tShow = tH + ':' + Math.floor(tM/10) + Math.floor(tM%10) + ':' + Math.floor(tS/10) + Math.floor(tS%10);
+        }
+
+
+        if (remaining <= 0)
+          {
+                tShow = 'EXPIRED';
+                document.forms.clockForm.clockField.value = tShow;
+                window.clearInterval(intervalID);
+                document.location = returnUrl;
+          }
+
+        else
+          {
+                document.forms.clockForm.clockField.value = tShow;
+                secondsRemaining -= 1;
+          }
+    }
+}
+
+//TODO: i don't think that functions itemListChanged, nextItem, or changeItem are used.  verify and remove.
+
+function itemListChanged() {
+    var itemList = document.getElementById("itemList");
+    if (itemList.selectedIndex != -1) {
+        changeItem(itemList.selectedIndex);
+    }
+}
+
+function nextItem() {
+   var itemList = document.getElementById("itemList");
+    if (itemList.selectedIndex != -1) {
+        changeItem(itemList.selectedIndex + 1);
+    }
+}
+
+function changeItem(idx) {
+    var itemList = document.getElementById("itemList");
+    window.location='run;jsessionid=81F45730F8BA593B61625D5E85276D82?move='+itemList.options[idx].value;
+}
+
+function scrollToCurrentItem() {
+    if (!navigator.userAgent.match(/Safari/i)) {
+        var url = window.location;
+        var newLocation =  '#question0';
+
+        var tmp = new String(url).match(/\#question\d+/g);
+        if (tmp)
+        {
+           url = new String(url).replace(/tmp[0]/g, newLocation);
+        }
+        else 
+        {
+           url = url + newLocation;
+        }
+
+        window.location = url;
+    }
+}
+
+</script><script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2832047-30']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</head>
+<body topmargin="0" style="/*border-left:1px solid #000000; border-top:4px solid #000000;*/" rightmargin="0" onload="doAnalytics();startClock();scrollToCurrentItem();" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#333399">
+<iframe style="display: none;" height="0" width="0" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/listen.htm" id="globalListenerFrame" name="globalListenerFrame"></iframe>
+<script type="text/javascript">
+
+        function doAnalytics()
+        {
+            
+                // Send analytics data to Google
+                Analytics.sendAnalytics({
+                    googleAnalyticsId: 'UA-2832047-30',
+                    testing: 'false',
+                    event:{
+                        category: 'webquiz',
+                        items:{
+                            server: 'webquiz.ilrn.com',
+                            userName: ''
+                            }
+                        }
+                    }
+                );
+            
+        }
+
+        var session="81F45730F8BA593B61625D5E85276D82";
+        <!--
+            
+            var listeningInterval = 30000; // global listener fires every 'this many' milliseconds
+
+            /**
+            * calls the global listener shell module and registers itself to fire
+            * again in another listeningInterval milliseconds.
+            */
+            function globalListen()
+            {
+                var theUrl = "/ilrn/bca/user/global-messages/listen?&s=" + session;
+                document.getElementById('globalListenerFrame').src = theUrl;
+                setTimeout('globalListen()', listeningInterval);
+            
+            }
+
+            // make the initial call which registers the method to go off in another listeningInterval milliseconds.
+            globalListen();
+            
+        --></script>
+<div style="min-width: 450px" id="overview_main">
+<div style="min-width: 450px" class="white-dark-border-box">
+<div class="white-dark-right-border">
+<div class="white-dark-top-border">
+<div style="padding:0px" class="white-dark-ul-corner">
+<div class="white-dark-ur-corner">
+<img alt="" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/onepixel.gif"></div>
+</div>
+</div>
+<div class="padding_LR_inner-width">
+<div id="content">
+<div style="padding: 5px; vertical-align: bottom;">
+<span style="padding-left: 20px; vertical-align: bottom;"><span class="subhead-text-14px">
+			                        Web Quiz
+			                    </span></span>
+</div>
+<div class="form-divider">
+<img src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/onepixel.gif"></div>
+<div class="pageSubheader">
+<div class="pageTools">
+<div class="information">
+<span class="infoTitle">
+						        		Assignment Name:
+					        		</span><span class="info">Madura, Financial Markets and Institutions 7e, Chapter 4</span>
+</div>
+</div>
+</div>
+<div class="for-table">
+<table cellspacing="0" cellpadding="0" class="standard-color">
+<thead>
+<tr>
+<th>
+<div style="text-align: center;">
+<div style="float: left;">
+															Summary of Results
+														</div>
+<div style="float: right;">
+<a class="quizlink" href="javascript:if (mc('1')) window.location = '/quiz-public?name=mafm07q%2Fmafm07q_F_chp04&session=81F45730F8BA593B61625D5E85276D82&startover=1';"><img title="Start Over" onmouseout="this.src=&#39;/media/img/webquiz/btn_start-over.gif&#39;;" onmouseover="this.src=&#39;/media/img/webquiz/btn_start-over_over.gif&#39;;" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/btn_start-over.gif" alt="Start Over" id="webQuiz_btnStartOver"></a>
+</div>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="question-box" style="
+													 padding: 0px;
+												 ">
+<script type="text/javascript" language="javascript"><!--
+                    function verifyEmail( email, required )
+                    {
+                      if (! required  &&  (email == ''))
+                        return true;
+                      var pA = email.indexOf( '@' );
+                      // @ sign must be present
+                      // user name must be non-blank
+                      if (pA == -1  ||  pA == 0)
+                        return false;
+                      var domain = email.substring( pA + 1 );
+                      // domain must contain a dot, but not at the beginning or end
+                      var pD = domain.indexOf( '.' );
+                      if (pD == -1  ||  pD == 0  ||  pD == domain.length-1)
+                        return false;
+                      return true;
+                    }
+                    function submitMail()
+                    {
+                        var f = document.forms.mailform;
+                        if (! verifyEmail( f.to1.value, true ))
+                        {
+                            alert( "at least one email address is required" );
+                            f.to1.focus();
+                            return false;
+                        }
+                        if (! verifyEmail( f.to2.value, false ))
+                        {
+                            alert( "invalid email address" );
+                            f.to2.focus();
+                            return false;
+                        }
+                        if (! verifyEmail( f.to3.value, false ))
+                        {
+                            alert( "invalid email address" );
+                            f.to3.focus();
+                            return false;
+                        }
+                        if (! verifyEmail( f.replyto.value, true ))
+                        {
+                            alert( "invalid return email address" );
+                            f.replyto.focus();
+                            return false;
+                        }
+                        //11371 JLB added verification for first name and last name
+                        if(f.fname.value == '')
+                        {
+                            alert( "your first name is required");
+                            f.fname.focus();
+                            return false;
+                        }
+                        if(f.lname.value == '')
+                        {
+                            alert( "your last name is required");
+                            f.lname.focus();
+                            return false;
+                        }
+                        return true;
+                    }
+                  --></script><div style="background: #F3F3F3; border-bottom: 1px solid #31749B; padding-bottom: 5px; margin-bottom: 5px;">
+<table style="border: 0px solid #31749B; width: 100%;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="light-gray-blue_background">
+<div class="align-left">
+<div class="padding_TB_5px">
+<span class="text-10px"><span class="padding_LR_5px"><b>Total Possible:</b> 30.0</span><span class="padding_LR_5px"><b>Time Spent:</b> 00:00:56<font color="red"><i></i></font></span><span class="padding_LR_5px"></span></span>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+<table style="border: 1px solid #31749B; width: 90%;" cellspacing="0" cellpadding="0" align="center">
+<tbody><tr>
+<td align="center" bgcolor="#CCFFCC"><img width="160" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/onepixel(1).gif" height="1"><br>correct<br>12.00<br>40.00%</td><td align="center" bgcolor="#FF6666"><img width="226.68" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/onepixel(1).gif" height="1"><br>incorrect<br>17.00<br>56.67%</td><td align="center" bgcolor="#dcdcdc"><img width="13.32" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/onepixel(1).gif" height="1"><br>not answered<br>1.0<br>3.33%</td>
+</tr>
+</tbody></table>
+<br>
+</td>
+</tr>
+</tbody></table>
+<form onsubmit="return submitMail()" name="mailform" method="post" id="mailform">
+<div style="padding-left:40px;">
+<span class="text-10px"><span class="padding_LR_5px">To email the results to your instructor(s), complete this form:</span></span>
+<table width="340" border="0">
+<tbody><tr>
+<td align="right" colspan="2" action="/bca/user/quiz-public/run?move=30&amp;session=81F45730F8BA593B61625D5E85276D82"><label class="required_field_caption" for="to1">E-mail results to:</label><input class="text_1em_150px-w" type="text" name="to1" id="to1" maxlength="70" value="">
+<br>
+<input class="text_1em_150px-w" type="text" name="to2" maxlength="70" value="">
+<br>
+<input class="text_1em_150px-w" type="text" name="to3" maxlength="70" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label for="comment">Additional message:</label><input class="text_1em_150px-w" type="text" name="comment" id="comment" maxlength="80" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label class="required_field_caption" for="fname">Your first name:</label><input class="text_1em_150px-w" type="text" name="fname" id="fname" maxlength="50" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label class="required_field_caption" for="lname">Your last name:</label><input class="text_1em_150px-w" type="text" name="lname" id="lname" maxlength="50" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label class="required_field_caption" for="replyto">Your email address:</label><input class="text_1em_150px-w" type="text" name="replyto" id="replyto" maxlength="70" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right">
+<p></p>
+<span class="errorText"></span></td>
+</tr>
+</tbody></table>
+</div>
+<div class="form-divider">
+<img src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/onepixel.gif"></div>
+<div style="height: 2em; padding: 0.5em 0.0em;">
+<div class="float_left">
+<span class="padding_L_5px"><span class="required_field_caption">Required field</span></span>
+</div>
+<div class="float_right_align_right">
+<input alt="Send e-mail" title="Send e-mail" onmouseout="this.src = &#39;/media/img/common/btn_send-email.gif&#39;" onmouseover="this.src = &#39;/media/img/common/btn_send-email_over.gif&#39;" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/btn_send-email.gif" name="email" type="image" id="webQuiz_btnSendEmail">
+</div>
+</div>
+</form>
+</div><a name="detailedResults"></a><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">1</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>What is the term of a member of the Federal Reserve's Board of Governors?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">nonrenewable four years</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">renewable four years</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">nonrenewable fourteen years</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">renewable fourteen years</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>c</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">2</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following is NOT a major goal of the Federal Open Market Committee when establishing monetary policy?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">high employment</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">low interest rates</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">price stability</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">sustained economic growth</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">3</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following is NOT a policy tool available to the Federal Reserve to affect money supply?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">adjusting the discount rate</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">adjusting banking reserve requirements</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">open market operations</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">printing currency</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>d</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">4</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>What is the name of the FOMC report showing regional economic conditions?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">beige book</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">red book</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">blue book</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">black book</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">5</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following would be expected to stimulate the economy?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Open market purchases.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Raising the discount rate.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Increasing the target for the federal funds rate.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">Raising the reserve requirement.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">6</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following would decrease money supply growth?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Federal purchases of securities.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Lowering the reserve requirement.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Decreasing the discount rate.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">Increasing the federal funds target.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>d</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">7</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following is NOT performed by the Federal Reserve?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Conducts monetary policy.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Provides loans to commercial banks through the discount window.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Regulates banks and insurance companies.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">Establishes reserve requirements of banks.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>c</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">8</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Where are decisions about open market operations completed?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Federal Reserve Bank of New York.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">New York stock exchange.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Fed discount window.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">None of the answers are correct.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">9</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>What instrument is used by the Federal Reserve when it wants to affect the aggregate level of bank funds for only a few days?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">certificates of deposit (CDs)</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">repurchase agreements</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">open market purchases</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">reserve requirements</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">10</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following statements about reserve requirements is true? <br><br>I. Reductions in the reserve requirement ratio increase money supply. <br>II. Checking accounts generally have a 10% reserve ratio. <br>III. Changes in reserve requirement ratios must be confirmed by the Senate.</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">I only</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">II only</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">I and II</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">I and III</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>c</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">11</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>When the Federal Reserve makes open market purchases, the growth in money supply will be greater when the reserve requirement ratio is:</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">higher.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">lower.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">changing.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">more information is required.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">12</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following monetary policy tools is most frequently used by the Federal Reserve?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Open market operations.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Changing reserve requirements.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Changing the discount rate.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">All monetary policy tools are used frequently.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">13</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which measure of money supply is the most volatile?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">M1</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">M2</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">M3</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">M4</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">14</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following is the major monetary policy-making body of the Federal Reserve System?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Federal Reserve Bank district presidents.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Securities and Exchange Commission.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">U.S. House of Representatives.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">Federal Open Market Committee.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>d</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">15</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Who is responsible for setting monetary policy for countries that have adopted the euro?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Bank of Frankfurt</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">European Central Bank (ECB)</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">International Monetary Fund (IMF)</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">World Bank</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i>a</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">16</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>The Board of Governors of the Federal Reserve has exclusive authority to change the federal funds rate.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">17</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>To decrease the money supply, the Fed should lower the discount rate.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">18</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>The chairman of the Federal Reserve is selected by the President of the United States.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">19</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>All banks must be members of the Federal Reserve.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">20</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Only nationally chartered banks can borrow at the Fed discount window.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">21</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>When the Fed purchases securities in the open market, money supply grows.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">22</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>To stimulate the economy, the Federal Reserve may lower its target for the federal funds rate.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">23</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>When banks borrow at the discount window, the supply of funds available in the economy is increased.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">24</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>As of January 2003, the discount rate is set at a level above the target for the federal funds rate.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">25</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Reserve requirements of the Federal Reserve are costly to banks because they do not earn any interest.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">26</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>The most narrow form of money supply is M1, which includes only currency and checking deposits.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_checked.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="confirmText">correct</span>
+                       (1.0)
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Correct.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">27</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Four seats on the FOMC are allocated to Federal Reserve Bank presidents on an annual rotating basis. </p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">28</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>All U.S. banks are required to join the Federal Reserve System.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">29</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Each European country has its own monetary policy that attempts to solve local economic problems.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">30</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>The Depository Institutions Deregulation and Monetary Control Act (DIDMCA) eliminates reserve requirements for banks that are not members of the Federal Reserve System.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16_x.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i>true</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="gray-bottom-border">
+<div class="gray-ll-corner">
+<div class="gray-lr-corner">
+<img alt="" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 4_files/onepixel.gif"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>

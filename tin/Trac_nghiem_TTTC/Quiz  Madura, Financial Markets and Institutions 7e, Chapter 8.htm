@@ -1,0 +1,1473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD W3 HTML//EN">
+<!-- saved from url=(0105)http://webquiz.ilrn.com/ilrn/bca/user/quiz-public/run;jsessionid=81F45730F8BA593B61625D5E85276D82?move=30 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link type="text/css" rel="stylesheet" href="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/style_sheet_v2.css">
+<link type="text/css" rel="stylesheet" href="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/style_sheet_v3.css">
+<link type="text/css" rel="stylesheet" href="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/takeAssignment.css">
+<title>Quiz: Madura, Financial Markets and Institutions 7e, Chapter 8 </title>
+<style type="text/css" media="screen"> DIV:highlight { background-color:black; } </style>
+<script type="text/javascript" async="" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/ga.js"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/main.js" language="javascript"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/compatabilityTools.js" language="javascript"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/events.js" type="text/javascript"></script><script src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/analytics.js" type="text/javascript"></script><script language="javascript">
+	var MEScot1='Sorry, your current browser does not support this content. \nPlease upgrade your browser. Refer to the CengageNOW System Requirements to determine the appropriate browser and version for your system.';
+</script><script language="javascript">
+
+//this is a stupid little function to compensate for a call to confirm from within an href.
+//foreign character sets are lost in an href, so it has to be handled this way.
+//the '1' or '2' just help with which string to use, and are purposely not matching the #
+//in the message tag as that label will likely change
+function mc(confMes)
+{
+	if (confMes==1)
+    	return confirm('You will lose all your current answers. Are you sure you want to proceed?');
+    else if (confMes==2)
+    	return confirm('This will end the quiz and take you to the review page - you will not be able to change your answers after this point. Are you sure you want to proceed?');    
+}
+
+var timeRemaining = -1;
+
+var secondsRemaining = timeRemaining / 1000;
+
+var returnUrl = "/bca/user/quiz-public/expired?session=81F45730F8BA593B61625D5E85276D82";
+var returnTarget = "_self";
+
+function clockIsPresent()
+{
+   if( document.forms.clockForm )
+      if( document.forms.clockForm.clockField) 
+         return true;
+
+   return false;
+
+}
+
+var intervalID;
+
+function startClock()
+{                
+    if( clockIsPresent()  && timeRemaining > 0)
+    {
+        intervalID = window.setInterval("updateClock()",1000);
+    }
+}
+
+function updateClock()
+{
+    if(clockIsPresent())
+    {
+        var remaining = secondsRemaining;
+        var tH = Math.floor( remaining / 3600 );
+        var tM = Math.floor( (remaining % 3600) / 60 );
+        var tS = remaining % 60;
+        var tShow = tM + ':' + Math.floor(tS/10) + Math.floor(tS%10);
+
+        if( tH > 0 )
+        {
+            tShow = tH + ':' + Math.floor(tM/10) + Math.floor(tM%10) + ':' + Math.floor(tS/10) + Math.floor(tS%10);
+        }
+
+
+        if (remaining <= 0)
+          {
+                tShow = 'EXPIRED';
+                document.forms.clockForm.clockField.value = tShow;
+                window.clearInterval(intervalID);
+                document.location = returnUrl;
+          }
+
+        else
+          {
+                document.forms.clockForm.clockField.value = tShow;
+                secondsRemaining -= 1;
+          }
+    }
+}
+
+//TODO: i don't think that functions itemListChanged, nextItem, or changeItem are used.  verify and remove.
+
+function itemListChanged() {
+    var itemList = document.getElementById("itemList");
+    if (itemList.selectedIndex != -1) {
+        changeItem(itemList.selectedIndex);
+    }
+}
+
+function nextItem() {
+   var itemList = document.getElementById("itemList");
+    if (itemList.selectedIndex != -1) {
+        changeItem(itemList.selectedIndex + 1);
+    }
+}
+
+function changeItem(idx) {
+    var itemList = document.getElementById("itemList");
+    window.location='run;jsessionid=81F45730F8BA593B61625D5E85276D82?move='+itemList.options[idx].value;
+}
+
+function scrollToCurrentItem() {
+    if (!navigator.userAgent.match(/Safari/i)) {
+        var url = window.location;
+        var newLocation =  '#question0';
+
+        var tmp = new String(url).match(/\#question\d+/g);
+        if (tmp)
+        {
+           url = new String(url).replace(/tmp[0]/g, newLocation);
+        }
+        else 
+        {
+           url = url + newLocation;
+        }
+
+        window.location = url;
+    }
+}
+
+</script><script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2832047-30']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</head>
+<body topmargin="0" style="/*border-left:1px solid #000000; border-top:4px solid #000000;*/" rightmargin="0" onload="doAnalytics();startClock();scrollToCurrentItem();" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#333399">
+<iframe style="display: none;" height="0" width="0" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/listen.htm" id="globalListenerFrame" name="globalListenerFrame"></iframe>
+<script type="text/javascript">
+
+        function doAnalytics()
+        {
+            
+                // Send analytics data to Google
+                Analytics.sendAnalytics({
+                    googleAnalyticsId: 'UA-2832047-30',
+                    testing: 'false',
+                    event:{
+                        category: 'webquiz',
+                        items:{
+                            server: 'webquiz.ilrn.com',
+                            userName: ''
+                            }
+                        }
+                    }
+                );
+            
+        }
+
+        var session="81F45730F8BA593B61625D5E85276D82";
+        <!--
+            
+            var listeningInterval = 30000; // global listener fires every 'this many' milliseconds
+
+            /**
+            * calls the global listener shell module and registers itself to fire
+            * again in another listeningInterval milliseconds.
+            */
+            function globalListen()
+            {
+                var theUrl = "/ilrn/bca/user/global-messages/listen?&s=" + session;
+                document.getElementById('globalListenerFrame').src = theUrl;
+                setTimeout('globalListen()', listeningInterval);
+            
+            }
+
+            // make the initial call which registers the method to go off in another listeningInterval milliseconds.
+            globalListen();
+            
+        --></script>
+<div style="min-width: 450px" id="overview_main">
+<div style="min-width: 450px" class="white-dark-border-box">
+<div class="white-dark-right-border">
+<div class="white-dark-top-border">
+<div style="padding:0px" class="white-dark-ul-corner">
+<div class="white-dark-ur-corner">
+<img alt="" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/onepixel.gif"></div>
+</div>
+</div>
+<div class="padding_LR_inner-width">
+<div id="content">
+<div style="padding: 5px; vertical-align: bottom;">
+<span style="padding-left: 20px; vertical-align: bottom;"><span class="subhead-text-14px">
+			                        Web Quiz
+			                    </span></span>
+</div>
+<div class="form-divider">
+<img src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/onepixel.gif"></div>
+<div class="pageSubheader">
+<div class="pageTools">
+<div class="information">
+<span class="infoTitle">
+						        		Assignment Name:
+					        		</span><span class="info">Madura, Financial Markets and Institutions 7e, Chapter 8</span>
+</div>
+</div>
+</div>
+<div class="for-table">
+<table cellspacing="0" cellpadding="0" class="standard-color">
+<thead>
+<tr>
+<th>
+<div style="text-align: center;">
+<div style="float: left;">
+															Summary of Results
+														</div>
+<div style="float: right;">
+<a class="quizlink" href="javascript:if (mc('1')) window.location = '/quiz-public?name=mafm07q%2Fmafm07q_F_chp08&session=81F45730F8BA593B61625D5E85276D82&startover=1';"><img title="Start Over" onmouseout="this.src=&#39;/media/img/webquiz/btn_start-over.gif&#39;;" onmouseover="this.src=&#39;/media/img/webquiz/btn_start-over_over.gif&#39;;" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/btn_start-over.gif" alt="Start Over" id="webQuiz_btnStartOver"></a>
+</div>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="question-box" style="
+													 padding: 0px;
+												 ">
+<script type="text/javascript" language="javascript"><!--
+                    function verifyEmail( email, required )
+                    {
+                      if (! required  &&  (email == ''))
+                        return true;
+                      var pA = email.indexOf( '@' );
+                      // @ sign must be present
+                      // user name must be non-blank
+                      if (pA == -1  ||  pA == 0)
+                        return false;
+                      var domain = email.substring( pA + 1 );
+                      // domain must contain a dot, but not at the beginning or end
+                      var pD = domain.indexOf( '.' );
+                      if (pD == -1  ||  pD == 0  ||  pD == domain.length-1)
+                        return false;
+                      return true;
+                    }
+                    function submitMail()
+                    {
+                        var f = document.forms.mailform;
+                        if (! verifyEmail( f.to1.value, true ))
+                        {
+                            alert( "at least one email address is required" );
+                            f.to1.focus();
+                            return false;
+                        }
+                        if (! verifyEmail( f.to2.value, false ))
+                        {
+                            alert( "invalid email address" );
+                            f.to2.focus();
+                            return false;
+                        }
+                        if (! verifyEmail( f.to3.value, false ))
+                        {
+                            alert( "invalid email address" );
+                            f.to3.focus();
+                            return false;
+                        }
+                        if (! verifyEmail( f.replyto.value, true ))
+                        {
+                            alert( "invalid return email address" );
+                            f.replyto.focus();
+                            return false;
+                        }
+                        //11371 JLB added verification for first name and last name
+                        if(f.fname.value == '')
+                        {
+                            alert( "your first name is required");
+                            f.fname.focus();
+                            return false;
+                        }
+                        if(f.lname.value == '')
+                        {
+                            alert( "your last name is required");
+                            f.lname.focus();
+                            return false;
+                        }
+                        return true;
+                    }
+                  --></script><div style="background: #F3F3F3; border-bottom: 1px solid #31749B; padding-bottom: 5px; margin-bottom: 5px;">
+<table style="border: 0px solid #31749B; width: 100%;" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="light-gray-blue_background">
+<div class="align-left">
+<div class="padding_TB_5px">
+<span class="text-10px"><span class="padding_LR_5px"><b>Total Possible:</b> 30.0</span><span class="padding_LR_5px"><b>Time Spent:</b> 00:00:27<font color="red"><i></i></font></span><span class="padding_LR_5px"></span></span>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+<table style="border: 1px solid #31749B; width: 90%;" cellspacing="0" cellpadding="0" align="center">
+<tbody><tr>
+<td align="center" bgcolor="#FF6666"><img width="26.68" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/onepixel(1).gif" height="1"><br>incorrect<br>2.00<br>6.67%</td><td align="center" bgcolor="#dcdcdc"><img width="373.32" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/onepixel(1).gif" height="1"><br>not answered<br>28.0<br>93.33%</td>
+</tr>
+</tbody></table>
+<br>
+</td>
+</tr>
+</tbody></table>
+<form onsubmit="return submitMail()" name="mailform" method="post" id="mailform">
+<div style="padding-left:40px;">
+<span class="text-10px"><span class="padding_LR_5px">To email the results to your instructor(s), complete this form:</span></span>
+<table width="340" border="0">
+<tbody><tr>
+<td align="right" colspan="2" action="/bca/user/quiz-public/run?move=30&amp;session=81F45730F8BA593B61625D5E85276D82"><label class="required_field_caption" for="to1">E-mail results to:</label><input class="text_1em_150px-w" type="text" name="to1" id="to1" maxlength="70" value="">
+<br>
+<input class="text_1em_150px-w" type="text" name="to2" maxlength="70" value="">
+<br>
+<input class="text_1em_150px-w" type="text" name="to3" maxlength="70" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label for="comment">Additional message:</label><input class="text_1em_150px-w" type="text" name="comment" id="comment" maxlength="80" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label class="required_field_caption" for="fname">Your first name:</label><input class="text_1em_150px-w" type="text" name="fname" id="fname" maxlength="50" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label class="required_field_caption" for="lname">Your last name:</label><input class="text_1em_150px-w" type="text" name="lname" id="lname" maxlength="50" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><label class="required_field_caption" for="replyto">Your email address:</label><input class="text_1em_150px-w" type="text" name="replyto" id="replyto" maxlength="70" value="">
+<br>
+</td>
+</tr>
+<tr>
+<td align="right">
+<p></p>
+<span class="errorText"></span></td>
+</tr>
+</tbody></table>
+</div>
+<div class="form-divider">
+<img src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/onepixel.gif"></div>
+<div style="height: 2em; padding: 0.5em 0.0em;">
+<div class="float_left">
+<span class="padding_L_5px"><span class="required_field_caption">Required field</span></span>
+</div>
+<div class="float_right_align_right">
+<input alt="Send e-mail" title="Send e-mail" onmouseout="this.src = &#39;/media/img/common/btn_send-email.gif&#39;" onmouseover="this.src = &#39;/media/img/common/btn_send-email_over.gif&#39;" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/btn_send-email.gif" name="email" type="image" id="webQuiz_btnSendEmail">
+</div>
+</div>
+</form>
+</div><a name="detailedResults"></a><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">1</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>What is the price of a $1,000 par value bond that has a 10% coupon, 5 years to maturity, and a yield of 8%? Assume the bond makes annual coupon payments.</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">$1,081.11</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">$1,079.85</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">$924.18</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">$1,031.94</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i>d</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">2</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>What is the price of a $1,000 par value bond that has a 12% coupon, 8 years to maturity, and a yield of 14%? Assume the bond makes semiannual coupon payments.</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">$907.22</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">$905.53</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">$1,101.06</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">$1,099.35</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">3</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>What is the present value of $1 million to be received in five years, if the required annual interest rate is 7.5%?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">$696,559</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">$930,233</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_x_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">$1,435,629</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">$759,991</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <span class="errorText">incorrect</span>
+                       (0.0)
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i>c</i>
+<br>                                feedback: <i>Incorrect.</i></td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">4</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>If the coupon on a bond is equal to the required rate of return demanded by investors, the bond sells at:</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">par value.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">a discount.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">a premium.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">more information is needed.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>c</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">5</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Rank the following bonds by price, from lowest to highest. NOTE: You should not have to calculate the price of all of the bonds to answer the question.<br><br>I. Five-year bond, 10% coupon, required interest rate = 12%<br>II. Five-year bond, 10% coupon, required interest rate = 8%<br>III. Ten-year bond, 10% coupon, required interest rate = 12%<br>IV. Ten-year bond, 10% coupon, required interest rate = 8%</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">I, II, III, IV</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">II, III, IV, I</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">III, I, II, IV</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">IV, I, II, III</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>c</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">6</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following would tend to increase interest rates?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Slower economic growth.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Lower inflation.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Improved credit quality.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">Increases in the federal budget deficit.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>d</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">7</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Which of the following announcements would tend to drive bond prices up?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Increasing unemployment.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Decreasing oil prices.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Declining expectations of the value of the dollar.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">None of the answers are correct.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">8</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>When interest rates decline by 1%, the change in a bond's price is ________ the change in the bonds price if interest rates increase by 1%.</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">greater than</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">less than</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">equal to</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">more information is needed</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">9</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>If financial institutions expect increasing interest rates, which of the following strategies should they employ?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">Selling bonds and investing in short-term securities.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">Increasing the proportion invested in low coupon bonds.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">Increasing the maturity of their bonds.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">None of the answers are correct.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">10</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>What is the duration of a four-year, 8% annual coupon bond if the required rate of return is 9%?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">3.22</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">3.57</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">3.86</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">4.00</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">11</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>A financial institution has the following bond investments. Determine the duration of the portfolio.<br><br> <table border="1"> <tbody><tr><td>  Maturity</td><td>  Duration</td><td> Coupon Rate (Annual)</td><td> Amount Invested</td></tr> <tr><td> 2 years</td><td> 1.8</td><td> 10%</td><td> $1 million</td></tr> <tr><td> 3 years</td><td> ??</td><td>   0%</td><td>   2 million</td></tr> <tr><td> 5 years</td><td> 4.5</td><td> 12%</td><td>   3 million</td></tr> <tr><td> 10 years</td><td> 8.0</td><td>   8%</td><td>   4 million</td></tr></tbody></table> </p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">3.65</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">4.82</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">5.33</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">more information is needed</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>c</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">12</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Determine the price of elasticity of a three-year, 5% annual coupon bond if the required rate of return goes from 5% to 6%. Assume the par value of the bond is $1,000.</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">-0.137</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">-0.267</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">-0.534</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">-2.673</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">13</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>A bond has a duration of 6, a required return of 8%, and a price of $900. What is the predicted price of the bond if the required return goes to 8.5%?</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">$650</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">$875</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">$897.50</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">$925</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>b</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">14</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Using duration to predict the price of a bond given a change in the required return:</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">always understates the actual price.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">always overstates the actual price.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">understates the actual price only when interest rates decline.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">understates the actual price only when interest rates increase.</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>a</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">15</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div xmlns:fo="http://www.w3.org/1999/XSL/Format"><p>Investing in bonds to generate the necessary cash flows to exactly meet projected expenses is called a(n) ________ strategy.</p></div><table width="100%" cellspacing="2" cellpadding="0" border="0">
+<tbody><tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">a.</td><td style="vertical-align:baseline">barbell</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">b.</td><td style="vertical-align:baseline">laddered</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">c.</td><td style="vertical-align:baseline">matching</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td width="100%">
+<table border="0" width="100%">
+<tbody><tr valign="baseline" height="40">
+<td style="vertical-align:baseline" width="9"><img style="position: static; vertical-align: -4px" width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16_cut.gif" hspace="2" height="16" align="middle"></td><td style="vertical-align:baseline" width="9">d.</td><td style="vertical-align:baseline">efficient</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>c</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">16</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Bonds that sell below par value are called discount bonds.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">17</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Most bonds pay semiannual coupons.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">18</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>When the investor's required rate of return exceeds the bond's coupon, the bond sells at a premium. </p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">19</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Discount bonds are better investments than premium bonds.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">20</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Bonds that sell at a discount will increase in value as they approach maturity. </p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">21</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>If inflation is expected to increase, bond prices tend to increase.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">22</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Improving economic conditions often lead to increasing interest rates.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">23</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Federal budget deficits place downward pressure on interest rates.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">24</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>The price elasticity of bonds is negative, indicating an inverse relationship between interest rates and bond prices.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">25</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>The risk premium on long-term bonds is greater than the risk premium on money market securities.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">26</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Low coupon bonds have higher price elasticity than high coupon bonds.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">27</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>The modified duration of zero coupon bonds is equal to its maturity.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">28</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>When asset duration exceeds liability duration, the net worth of financial institutions declines as interest rates decrease. </p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">29</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Convexity is more pronounced for long maturity bonds than short maturity bonds.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>true</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table><hr width="95%" size="1" color="#dcdcdc"><table width="95%" border="0" bgcolor="White" align="center">
+<tbody><tr valign="top">
+<td width="30" bgcolor="WhiteSmoke" align="center">30</td><td width="100%" class="text-10px" bgcolor="#ffffff"><div class="problemTypes"><p>Allocating the same proportion of invested funds across several different bond maturities is called a barbell strategy.</p></div><table width="100%" cellspacing="2" cellpadding="2" border="0">
+<tbody><tr>
+<td width="100%" class="problemTypes"><img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">True
+            &nbsp;&nbsp;
+			<br>
+<img width="16" vspace="1" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/MC_circle16x16.gif" hspace="5" height="24" align="middle">False
+            &nbsp;&nbsp;
+			<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" bgcolor="#f5f5f5">                        status:                        <b>not answered</b>
+                       ()
+                       <br>                        correct: <i>false</i>
+<br>                        your answer: <i></i>
+<br>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="gray-bottom-border">
+<div class="gray-ll-corner">
+<div class="gray-lr-corner">
+<img alt="" src="./Quiz  Madura, Financial Markets and Institutions 7e, Chapter 8_files/onepixel.gif"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>

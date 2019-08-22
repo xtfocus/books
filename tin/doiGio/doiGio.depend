@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1456058139 source:f:\study\tin\doigio\main.c
+	<stdio.h>
+	<stdlib.h>
+

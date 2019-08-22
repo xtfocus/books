@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1463075478 source:f:\study\tin\daydayday\main.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1463064892 f:\study\tin\daydayday\header.h
+
